@@ -52,7 +52,7 @@ export default function Contact() {
     }
 
     const form = new FormData();
-    form.append("access_key", "537e895f-e8c0-47b4-9c60-1b1068c7919e"); // Updated Access Key
+    form.append("access_key", "537e895f-e8c0-47b4-9c60-1b1068c7919e");
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject || "New Contact Form Submission");
@@ -95,13 +95,41 @@ export default function Contact() {
                 <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                   Get in Touch
                 </h2>
-                <p className="text-gray-300 text-lg">
-                  I'm always happy to connect — whether it's about a cool
-                  project, collaboration, or just a friendly chat. Drop me a
-                  message anytime and I’ll get back to you as soon as I can.
+                <p className="text-gray-300 text-lg mb-6">
+                  I'm always happy to connect — whether it's about a cool project, collaboration, or just a friendly chat. Drop me a message anytime and I’ll get back to you as soon as I can.
                 </p>
+
+                {/* Social Links */}
+                <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8">
+                  {/* LinkedIn */}
+                  <a
+                    href="https://www.linkedin.com/in/sifen-abduselam-a52798339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 bg-blue-900 hover:bg-blue-800 px-4 py-2 rounded-lg transition-all duration-300 group"
+                  >
+                    <svg className="w-4 h-4 text-blue-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.06 4.267 4.87v5.696zM7.032 8.468c-1.175 0-2.126-.95-2.126-2.126 0-1.175.951-2.126 2.126-2.126 1.175 0 2.126.951 2.126 2.126 0 1.176-.951 2.126-2.126 2.126zm3.37 11.984h-3.555v-5.569c0-1.328-.026-3.037-1.851-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H3.452V9h3.413v1.561h.046c.478-.9 1.637-1.85 3.37-1.85 3.602 0 4.267 2.06 4.267 4.87v5.696z"/>
+                    </svg>
+                    <span className="text-blue-300 group-hover:text-white text-sm font-medium">LinkedIn</span>
+                  </a>
+
+                  {/* Telegram */}
+                  <a
+                    href="https://t.me/SifenAbduselam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 bg-cyan-900 hover:bg-cyan-800 px-4 py-2 rounded-lg transition-all duration-300 group"
+                  >
+                    <svg className="w-4 h-4 text-cyan-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-.936-.64 0-.627 0-.627 1.037.072 1.587 1.06 1.587 1.06.92 1.575 2.41 1.12 3 .86.094-.67.36-1.12.65-1.37-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.29.1-2.67 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.42.1 2.67.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.74 0 .27.22.59.83.5 4.98-1.58 8.42-6.08 8.42-11.4C24 5.37 18.63 0 12 0z"/>
+                    </svg>
+                    <span className="text-cyan-300 group-hover:text-white text-sm font-medium">Telegram</span>
+                  </a>
+                </div>
               </div>
 
+              {/* Email & Location */}
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="bg-purple-500/10 p-3 rounded-lg">
@@ -109,7 +137,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">sifenabduselamm@gmail.com</p> {/* Updated Email */}
+                    <p className="text-gray-400">sifenabduselamm@gmail.com</p>
                   </div>
                 </div>
 
@@ -159,9 +187,7 @@ export default function Contact() {
                       }
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.email}
-                      </p>
+                      <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                     )}
                   </div>
 
@@ -178,9 +204,7 @@ export default function Contact() {
                       }
                     />
                     {errors.subject && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.subject}
-                      </p>
+                      <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
                     )}
                   </div>
 
@@ -197,9 +221,7 @@ export default function Contact() {
                       }
                     ></textarea>
                     {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.message}
-                      </p>
+                      <p className="text-red-500 text-sm mt-1">{errors.message}</p>
                     )}
                   </div>
                 </div>
