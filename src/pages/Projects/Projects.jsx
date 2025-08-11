@@ -5,37 +5,33 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
-    description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    title: "Rewire-App with React and Tailwind css",
+    description: "A React application that helps users build lasting habits through 21-day tracking system.",
+    link: "https://i.postimg.cc/CKnpphhQ/image-1.png",
     color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    githubLink: " https://github.com/sifenabduselam/rewire-app.git",
+    liveLink: "https://sifenabduselam.github.io/rewire-app/",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
-    description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    title: "Resume-Fix with React.js ",
+    description:"A React application that analyses your resume and provides instant fedback." ,
+    link: "https://i.postimg.cc/9Qq4LPpm/image2.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/sifenabduselam/resume-fix.git",
+    liveLink: "https://sifenabduselam.github.io/resume-fix/",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "Intern-Tracker",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+      "A simple tool for teams to track intern application",
+   
+    link: "https://i.postimg.cc/Y0dWgK4Q/image3.png",
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+    githubLink: "https://github.com/sifenabduselam/intern-tracker.git",
+    liveLink: "https://sifenabduselam.github.io/intern-tracker/",
   },
   {
-    title: "CodeKori 🔥",
+    title: "Portfolio Website",
     description:
       "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
     src: "house.jpg",

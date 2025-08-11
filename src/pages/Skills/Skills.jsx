@@ -126,7 +126,7 @@ const SkillsSection = () => {
       `}</style>
     </main>
     // main styles 
-  );
+  );                                            
 };
 
 export default SkillsSection;
