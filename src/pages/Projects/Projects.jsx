@@ -33,12 +33,12 @@ const projects = [
   {
     title: "Portfolio Website",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+      "A sleek, aniamted portfolio built react and tailwind css and framer motion to show my projects with modern design",
+  
+    link: "https://i.postimg.cc/j59gtjb6/image-5.png",
     color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    githubLink: "https://github.com/sifenabduselam/PORTFOLIO",
+    liveLink: "https://sifenabduselam.github.io/PORTFOLIO",
   },
 ];
 
